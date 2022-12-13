@@ -1,4 +1,4 @@
-﻿адача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.(Math.Pow использовать нельзя!!!)
+// 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.(Math.Pow использовать нельзя!!!)
 
 // 3, 5 -> 243 (3⁵)
 
@@ -11,7 +11,7 @@
 //     for (int i = 1; i <= number_b; i++)
 
 
-//         res *= number_a;
+//         res *= number_a;//ввозводиим число A на степнь B
 
 //     return res;
 
@@ -41,7 +41,7 @@
 
 //     while (num!=0){
 
-//         sum+=num%10;
+//         sum+=num%10;//тут проводим операцию мы нахождения суммы цифер 
 //         num/=10;
 //     }
 
@@ -65,7 +65,7 @@ int[] Array(int num)
     {
         Console.Write("\n введите элемент массива : ");
         int value = Convert.ToInt32(Console.ReadLine());
-        arr[i] = value;
+        arr[i] = value;//заполнения массива через  ввод
     }
 
     return arr;
@@ -76,13 +76,13 @@ void ShowArray(int[] arr)
     Console.Write('[');
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i < arr.Length - 1)
+        if (i < arr.Length - 1)//для удаление запятой
             System.Console.Write($"{arr[i]} ,");
         else 
              System.Console.Write($"{arr[i]} ");
     }
     Console.Write(']');
-    Console.Write('\n');
+ 
 }
 Console.Write("введите количестов элементов массива : ");
 int size = Convert.ToInt32(Console.ReadLine());
